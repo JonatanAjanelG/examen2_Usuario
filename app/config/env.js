@@ -4,7 +4,7 @@ const env = {
     username: 'umg_salama_16431_wvn6_user',
     password: 'lkL0FH0bSrkd49fc6q7ybJGln4svvliJ',
     //host: 'dpg-crmgum23esus73fsvheg-a.oregon-postgres.render.com', //este es el host externo
-   host: 'dpg-crmgum23esus73fsvheg-a', //usar este para subir el proyecto a render final
+    host: 'dpg-crmgum23esus73fsvheg-a', //usar este para subir el proyecto a render final
     dialect: 'postgres',
     
     pool: {
