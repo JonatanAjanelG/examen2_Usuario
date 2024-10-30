@@ -18,7 +18,7 @@ const corsOptions = {
   origin: 'http://localhost:4200',
   optionsSuccessStatus: 200
 }
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(bodyParser.json());
 //luego se descomenta la linea para usar la ruta
