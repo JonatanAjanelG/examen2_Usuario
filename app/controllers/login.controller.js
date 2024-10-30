@@ -84,7 +84,7 @@ exports.create = async (req, res) => {
         });
     } catch (error) {
         res.status(500).json({
-            message: "Error -> No se pudo crear el usuario en la BD",
+            message: "Error -> No se pudo crear el usuario en la BD revise",
             error: error.message,
         });
     }
