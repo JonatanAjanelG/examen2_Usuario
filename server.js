@@ -12,6 +12,7 @@ db.sequelize.sync({force: false}).then(() => {
 
 //esto descomentarlo despues de crear la ruta para que se pueda leer
 let router = require('./app/routers/usuarios.router.js');
+let router2 = require('./app/routers/login.router.js');
 
 const cors = require('cors')
 const corsOptions = {
@@ -22,7 +23,7 @@ app.use(cors());
 
 app.use(bodyParser.json());
 //luego se descomenta la linea para usar la ruta
-app.use('/', router);
+app.use('/', router,router2);
 app.get("/",(req,res) => {
   
   res.json({mesage:"Bienvenido Estudiante Jonatan Ajanel Gonzalez al segundo examen de Desarrollo Web"});
